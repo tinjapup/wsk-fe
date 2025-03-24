@@ -53,9 +53,14 @@ Backend: http://localhost:3000/
 
 ## Testing
 
+1. 
 Installed the following tools and libraries:
 - Robot Framework
 - Browser Library
 - Requests library
 - CryptoLibrary
 - Robotidy
+
+2. 
+Conducted a test with Robot Framework and Browser Library to test login functionality. 
+The test was passed. 
