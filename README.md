@@ -50,3 +50,12 @@ Tribe+ is a web application designed for tracking exercise activity.
 
 Frontend: http://localhost:5173/ 
 Backend: http://localhost:3000/ 
+
+## Testing
+
+Installed the following tools and libraries:
+- Robot Framework
+- Browser Library
+- Requests library
+- CryptoLibrary
+- Robotidy
