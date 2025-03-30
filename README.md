@@ -53,7 +53,7 @@ Backend: http://localhost:3000/
 
 ## Testing
 
-1. 
+Exercise 1. 
 Installed the following tools and libraries:
 - Robot Framework
 - Browser Library
@@ -61,6 +61,12 @@ Installed the following tools and libraries:
 - CryptoLibrary
 - Robotidy
 
-2. 
+Exercise 2. 
 Conducted a test with Robot Framework and Browser Library to test login functionality. 
 The test was passed. 
+
+Exercise 3. 
+Practiced using Robot Framework on https://www.selenium.dev/selenium/web/web-form.html: selecting options from dropdowns, checking and unchecking checkboxes and radioboxes, picking color etc. 
+
+Exercise 4. 
+Tested the "create new entry" functionality on my project’s website using Robot Framework. Since this feature requires authentication, I first reused the login test from Exercise 2. After successfully logging in, I automated the process of creating a new entry. The test was passed. 
