@@ -70,3 +70,12 @@ Practiced using Robot Framework on https://www.selenium.dev/selenium/web/web-for
 
 Exercise 4. 
 Tested the "create new entry" functionality on my project’s website using Robot Framework. Since this feature requires authentication, I first reused the login test from Exercise 2. After successfully logging in, I automated the process of creating a new entry. The test was passed. 
+
+Exercise 5. 
+Did login testing using credentials from .env file. 
+See: log.html, report.html, output.xml
+
+Exercise 6. 
+Did login testing using credentials crypted with CryptoLibrary and CryptoClient. 
+See: log.html, report.html, output.xml
+
