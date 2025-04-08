@@ -53,7 +53,7 @@ Backend: http://localhost:3000/
 
 ## Testing
 
-Exercise 1. 
+### Exercise 1. 
 Installed the following tools and libraries:
 - Robot Framework
 - Browser Library
@@ -61,21 +61,22 @@ Installed the following tools and libraries:
 - CryptoLibrary
 - Robotidy
 
-Exercise 2. 
+### Exercise 2. 
 Conducted a test with Robot Framework and Browser Library to test login functionality. 
 The test was passed. 
 
-Exercise 3. 
+### Exercise 3. 
 Practiced using Robot Framework on https://www.selenium.dev/selenium/web/web-form.html: selecting options from dropdowns, checking and unchecking checkboxes and radioboxes, picking color etc. 
 
-Exercise 4. 
+
+### Exercise 4. 
 Tested the "create new entry" functionality on my project’s website using Robot Framework. Since this feature requires authentication, I first reused the login test from Exercise 2. After successfully logging in, I automated the process of creating a new entry. The test was passed. 
 
-Exercise 5. 
-Did login testing using credentials from .env file. 
-See: log.html, report.html, output.xml
+### Exercise 5. 
+Did login testing using credentials from .env file. <br>
+See: [log.html](tests/front/tehtava_5_log.html), [report.html](tests/front/tehtava_5_report.html), [output.xml](tests/front/tehtava_5_output.xml)
 
-Exercise 6. 
-Did login testing using credentials crypted with CryptoLibrary and CryptoClient. 
-See: log.html, report.html, output.xml
+### Exercise 6. 
+Did login testing using credentials crypted with CryptoLibrary and CryptoClient.  <br>
+See: [log.html](tests/front/tehtava_6_log.html), [report.html](tests/front/tehtava_6_report.html), [output.xml](tests/front/tehtava_6_output.xml)
 
