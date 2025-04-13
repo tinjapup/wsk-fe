@@ -28,11 +28,11 @@ dist-ssr
 tests/*
 
 # Except testing exercise files
-!tests/front/tehtava_5_log.html
-!tests/front/tehtava_5_report.html
-!tests/front/tehtava_5_output.xml
+!tests/front/outputs/tehtava_5_log.html
+!tests/front/outputs/tehtava_5_report.html
+!tests/front/outputs/tehtava_5_output.xml
 !tests/front/tehtava_5.robot
-!tests/front/tehtava_6_log.html
-!tests/front/tehtava_6_report.html
-!tests/front/tehtava_6_output.xml
+!tests/front/outputs/tehtava_6_log.html
+!tests/front/outputs/tehtava_6_report.html
+!tests/front/outputs/tehtava_6_output.xml
 !tests/front/tehtava_6.robot
