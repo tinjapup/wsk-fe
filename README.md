@@ -80,3 +80,7 @@ See: [log.html](tests/front/tehtava_5_log.html), [report.html](tests/front/tehta
 Did login testing using credentials crypted with CryptoLibrary and CryptoClient.  <br>
 See: [log.html](tests/front/tehtava_6_log.html), [report.html](tests/front/tehtava_6_report.html), [output.xml](tests/front/tehtava_6_output.xml)
 
+### Exercise 7.
+Moved test log and report files to outputs/-directory. 
+Directing output files to a chosen folder can be done with --outputdir -command. For example: 
+<pre>robot --outputdir outputs tests/tehtava_6.robot</pre>
