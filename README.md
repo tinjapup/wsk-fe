@@ -2,6 +2,53 @@
 
 Tribe+ is a web application designed for tracking exercise activity.
 
+github.io directory:
+- [index](.)
+- [tests/front](./tests/front)
+- [tests/front/outputs](./tests/front/outputs/)
+
+## Testing
+
+
+### Exercise 1. 
+Installed the following tools and libraries:
+- Robot Framework
+- Browser Library
+- Requests library
+- CryptoLibrary
+- Robotidy
+
+### Exercise 2. 
+Conducted a test with Robot Framework and Browser Library to test login functionality. 
+The test was passed. 
+
+### Exercise 3. 
+Practiced using Robot Framework on https://www.selenium.dev/selenium/web/web-form.html: selecting options from dropdowns, checking and unchecking checkboxes and radioboxes, picking color etc. 
+
+
+### Exercise 4. 
+Tested the "create new entry" functionality on my project’s website using Robot Framework. Since this feature requires authentication, I first reused the login test from Exercise 2. After successfully logging in, I automated the process of creating a new entry. The test was passed. 
+
+### Exercise 5. 
+Did login testing using credentials from .env file. <br>
+See: [log.html](tests/front/tehtava_5_log.html), [report.html](tests/front/tehtava_5_report.html), [output.xml](tests/front/tehtava_5_output.xml)
+
+### Exercise 6. 
+Did login testing using credentials crypted with CryptoLibrary and CryptoClient.  <br>
+See: [log.html](tests/front/tehtava_6_log.html), [report.html](tests/front/tehtava_6_report.html), [output.xml](tests/front/tehtava_6_output.xml)
+
+### Exercise 7.
+Moved test log and report files to outputs/-directory. 
+Directing output files to a chosen folder can be done with --outputdir -command. For example: 
+<pre>robot --outputdir outputs tests/tehtava_6.robot</pre>
+
+### Exercise 8.
+Created a GitHub Pages site for the project.
+
+<br>
+<hr>
+<br>
+
 ## Features
 - User authentication (login & registration)
 - Activity tracking (add, edit & remove entries)
@@ -51,36 +98,3 @@ Tribe+ is a web application designed for tracking exercise activity.
 Frontend: http://localhost:5173/ 
 Backend: http://localhost:3000/ 
 
-## Testing
-
-### Exercise 1. 
-Installed the following tools and libraries:
-- Robot Framework
-- Browser Library
-- Requests library
-- CryptoLibrary
-- Robotidy
-
-### Exercise 2. 
-Conducted a test with Robot Framework and Browser Library to test login functionality. 
-The test was passed. 
-
-### Exercise 3. 
-Practiced using Robot Framework on https://www.selenium.dev/selenium/web/web-form.html: selecting options from dropdowns, checking and unchecking checkboxes and radioboxes, picking color etc. 
-
-
-### Exercise 4. 
-Tested the "create new entry" functionality on my project’s website using Robot Framework. Since this feature requires authentication, I first reused the login test from Exercise 2. After successfully logging in, I automated the process of creating a new entry. The test was passed. 
-
-### Exercise 5. 
-Did login testing using credentials from .env file. <br>
-See: [log.html](tests/front/tehtava_5_log.html), [report.html](tests/front/tehtava_5_report.html), [output.xml](tests/front/tehtava_5_output.xml)
-
-### Exercise 6. 
-Did login testing using credentials crypted with CryptoLibrary and CryptoClient.  <br>
-See: [log.html](tests/front/tehtava_6_log.html), [report.html](tests/front/tehtava_6_report.html), [output.xml](tests/front/tehtava_6_output.xml)
-
-### Exercise 7.
-Moved test log and report files to outputs/-directory. 
-Directing output files to a chosen folder can be done with --outputdir -command. For example: 
-<pre>robot --outputdir outputs tests/tehtava_6.robot</pre>
