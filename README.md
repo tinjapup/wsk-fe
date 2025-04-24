@@ -46,8 +46,9 @@ Directing output files to a chosen folder can be done with --outputdir -command.
 Created a GitHub Pages site for the project.
 
 ### Exercise 9.
-Performed backend testing. In Exercise 9a, I tested the functionality of the database, and in Exercise 9b, I tested the status of the backend server.
+Performed backend testing. In Exercise 9a, I tested the functionality of the database, and in Exercise 9b, I tested the status of the backend server.<br>
 9a: [log.html](tests/front/outputs/tehtava_9a_log.html), [report.html](tests/front/outputs/tehtava_9a_report.html), [output.xml](tests/front/outputs/tehtava_9a_output.xml)
+<br>
 9b: [log.html](tests/front/outputs/tehtava_9b_log.html), [report.html](tests/front/outputs/tehtava_9b_report.html), [output.xml](tests/front/outputs/tehtava_9b_output.xml)
 
 
