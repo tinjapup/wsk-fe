@@ -31,11 +31,11 @@ Tested the "create new entry" functionality on my project’s website using Robo
 
 ### Exercise 5. 
 Did login testing using credentials from .env file. <br>
-See: [log.html](tests/front/tehtava_5_log.html), [report.html](tests/front/tehtava_5_report.html), [output.xml](tests/front/tehtava_5_output.xml)
+See: [log.html](tests/front/outputs/tehtava_5_log.html), [report.html](tests/front/outputs/tehtava_5_report.html), [output.xml](tests/front/outputs/tehtava_5_output.xml)
 
 ### Exercise 6. 
 Did login testing using credentials crypted with CryptoLibrary and CryptoClient.  <br>
-See: [log.html](tests/front/tehtava_6_log.html), [report.html](tests/front/tehtava_6_report.html), [output.xml](tests/front/tehtava_6_output.xml)
+See: [log.html](tests/front/outputs/tehtava_6_log.html), [report.html](tests/front/outputs/tehtava_6_report.html), [output.xml](tests/front/outputs/tehtava_6_output.xml)
 
 ### Exercise 7.
 Moved test log and report files to outputs/-directory. 
@@ -44,6 +44,12 @@ Directing output files to a chosen folder can be done with --outputdir -command.
 
 ### Exercise 8.
 Created a GitHub Pages site for the project.
+
+### Exercise 9.
+Performed backend testing. In Exercise 9a, I tested the functionality of the database, and in Exercise 9b, I tested the status of the backend server.
+9a: [log.html](tests/front/outputs/tehtava_9a_log.html), [report.html](tests/front/outputs/tehtava_9a_report.html), [output.xml](tests/front/outputs/tehtava_9a_output.xml)
+9b: [log.html](tests/front/outputs/tehtava_9b_log.html), [report.html](tests/front/outputs/tehtava_9b_report.html), [output.xml](tests/front/outputs/tehtava_9b_output.xml)
+
 
 <br>
 <hr>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-24T15:19:50.484678" rpa="false" schemaversion="5">
+<suite id="s1" name="Tehtava 9B" source="C:\Users\35840\Documents\Hyte-projekti\FE\vite-project\tests\front\tehtava_9b.robot">
+<kw name="Authenticate as Admin" type="SETUP">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-24T15:19:50.977844" level="INFO">${body} = {'username': 'admin', 'password': 'admin123'}</msg>
+<var>${body}</var>
+<arg>username=${USERNAME}</arg>
+<arg>password=${PASSWORD}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-24T15:19:50.977494" elapsed="0.000386"/>
+</kw>
+<kw name="POST" owner="RequestsLibrary">
+<msg time="2025-04-24T15:19:53.303323" level="INFO">POST Request : url=http://localhost:3000/api/auth/login 
+ path_url=/api/auth/login 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '45', 'Content-Type': 'application/json'} 
+ body=b'{"username": "admin", "password": "admin123"}' 
+ </msg>
+<msg time="2025-04-24T15:19:53.303440" level="INFO">POST Response : url=http://localhost:3000/api/auth/login 
+ status=200, reason=OK 
+ headers={'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '461', 'ETag': 'W/"1cd-Fej7JBuZw1Ed5DSXFUjbvwSbqxA"', 'Date': 'Thu, 24 Apr 2025 12:19:53 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
+ body={"message":"login ok","user":{"user_id":1,"username":"admin","password":"$2b$10$wdb6Q.0xGAOmNyfee7Tme../QbY4yZOQmFG6YAJLHrFHDjLxDQmjG","email":"admin@email.com","user_level":"admin","created_at":"2025-02-25T10:40:04.000Z","weight":"70.00","height":"60.00","first_name":"Maija","last_name":"Meikäläinen"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3NDU0OTcxOTMsImV4cCI6MTc0NTUwNzk5M30.D11Pux1JRLxqPeGRJeqIJ8FZv86QMiJe9rNK_jQon9c"} 
+ </msg>
+<msg time="2025-04-24T15:19:53.303635" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>url=http://localhost:3000/api/auth/login</arg>
+<arg>json=${body}</arg>
+<doc>Sends a POST request.</doc>
+<status status="PASS" start="2025-04-24T15:19:50.977999" elapsed="2.325674"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T15:19:53.314804" level="INFO">{'message': 'login ok', 'user': {'user_id': 1, 'username': 'admin', 'password': '$2b$10$wdb6Q.0xGAOmNyfee7Tme../QbY4yZOQmFG6YAJLHrFHDjLxDQmjG', 'email': 'admin@email.com', 'user_level': 'admin', 'created_at': '2025-02-25T10:40:04.000Z', 'weight': '70.00', 'height': '60.00', 'first_name': 'Maija', 'last_name': 'Meikäläinen'}, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3NDU0OTcxOTMsImV4cCI6MTc0NTUwNzk5M30.D11Pux1JRLxqPeGRJeqIJ8FZv86QMiJe9rNK_jQon9c'}</msg>
+<arg>${response.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T15:19:53.303895" elapsed="0.011202"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T15:19:53.316513" level="INFO">${token} = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3NDU0OTcxOTMsImV4cCI6MTc0NTUwNzk5M30.D11Pux1JRLxqPeGRJeqIJ8FZv86QMiJe9rNK_jQon9c</msg>
+<var>${token}</var>
+<arg>${response.json()}[token]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T15:19:53.315394" elapsed="0.001179"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T15:19:53.317169" level="INFO">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3NDU0OTcxOTMsImV4cCI6MTc0NTUwNzk5M30.D11Pux1JRLxqPeGRJeqIJ8FZv86QMiJe9rNK_jQon9c</msg>
+<arg>${token}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T15:19:53.316755" elapsed="0.000497"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-04-24T15:19:53.317691" level="INFO">${token} = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3NDU0OTcxOTMsImV4cCI6MTc0NTUwNzk5M30.D11Pux1JRLxqPeGRJeqIJ8FZv86QMiJe9rNK_jQon9c</msg>
+<arg>${token}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-04-24T15:19:53.317487" elapsed="0.000275"/>
+</kw>
+<status status="PASS" start="2025-04-24T15:19:50.976962" elapsed="2.340926"/>
+</kw>
+<test id="s1-t1" name="Get activities" line="17">
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2025-04-24T15:19:55.355683" level="INFO">GET Request : url=http://localhost:3000/api/activities 
+ path_url=/api/activities 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2025-04-24T15:19:55.355793" level="INFO">GET Response : url=http://localhost:3000/api/activities 
+ status=200, reason=OK 
+ headers={'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'ETag': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"', 'Date': 'Thu, 24 Apr 2025 12:19:55 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
+ body=[] 
+ </msg>
+<msg time="2025-04-24T15:19:55.355892" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>url=http://localhost:3000/api/activities</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2025-04-24T15:19:53.318687" elapsed="2.037228"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2025-04-24T15:19:55.356378" elapsed="0.000436"/>
+</kw>
+<status status="PASS" start="2025-04-24T15:19:53.317969" elapsed="2.039355"/>
+</test>
+<status status="PASS" start="2025-04-24T15:19:50.487823" elapsed="4.870858"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tehtava 9B" id="s1" pass="1" fail="0" skip="0">Tehtava 9B</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
